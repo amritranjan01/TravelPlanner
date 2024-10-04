@@ -5,7 +5,7 @@
     
 
     <div class="row">
-        <h1 class="text-center">Edit Campground</h1>
+        <h1 class="text-center">Edit Adventure Activity</h1>
         <div class="col-md-6 offset-md-3">
             <form action="/campgrounds/<%=campground._id%>?_method=PUT" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
                 <div class="mb-3">
@@ -24,7 +24,7 @@
                 </div>
                 
                 <div class="mb-3">
-                    <label class="form-label" for="price">Campground Price</label>
+                    <label class="form-label" for="price">Adventure Activity Price</label>
                     <div class="input-group">
                         <span class="input-group-text" id="price-label">$</span>
                         <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="Username" aria-describedby="price-label" name="campground[price]" value="<%=campground.price%>" required>
@@ -59,11 +59,11 @@
                     <%})%>
                   </div>
                   <div class="mb-3">
-                <button class="btn btn-info">Update Campground</button>
+                <button class="btn btn-info">Update Adventure Activity</button>
             </div>
         
             </form>
-            <a href="/campgrounds/<%=campground._id%>">Back to Campground</a>
+            <a href="/campgrounds/<%=campground._id%>">Back to Adventure Activity</a>
             
         
         </div>
